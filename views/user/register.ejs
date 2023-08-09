@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="/css/signup.css">
+   </head>
+   <body>
+
+
+      <div class="content">
+         <div class="text">
+            Sign up
+         </div>
+         <form action="/register" method="post">
+            <div class="field">
+               <input type="text" name="name" id="name" required>
+               <span class="fas fa-user"></span>
+               <label>Name</label>
+            </div>
+            <div class="field">
+               <input type="text" name="email" id="email" required>
+               <span class="fas fa-user"></span>
+               <label>Email</label>
+            </div>
+            <br>
+            <div class="field">
+               <input type="password" name="password" id="password" required>
+               <span class="fas fa-lock"></span>
+               <label>Password</label>
+            </div>
+            <br>
+            <div class="field">
+               <input type="password" name="confirm" id="confirm" required>
+               <span class="fas fa-lock"></span>
+               <label>Confirm Password</label>
+            </div>
+            <button type="submit">Sign in</button>
+            <div class="sign-up">
+               Already a member ?
+               <a href="/login">Login now</a>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
